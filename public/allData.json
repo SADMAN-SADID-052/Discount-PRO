@@ -1,0 +1,124 @@
+[
+    {
+      "_id": "63a9f0ea7c0f1",
+      "brand_name": "TechMart",
+      "rating": 4.5,
+      "description": "Electronics and gadgets store",
+      "brand_logo": "https://cdn-icons-png.freepik.com/256/6298/6298991.png?ga=GA1.1.94081497.1723952170&semt=ais_hybrid",
+      "shop-Link": "https://techmart.com",
+      "category": "Electronics",
+      "isSaleOn": true,
+      "coupons": [
+        {
+          "coupon-code": "TECH20",
+          "description": "20% off on all electronics",
+          "expiry-date": "2024-12-31",
+          "condition": "Minimum purchase of $100",
+          "coupon_type": "Discount"
+        },
+        {
+          "coupon-code": "FREESHIP",
+          "description": "Free shipping on orders over $50",
+          "expiry-date": "2024-11-30",
+          "condition": "Only on standard shipping",
+          "coupon_type": "Free Shipping"
+        }
+      ]
+    },
+    {
+      "_id": "a739f1d88d0a4",
+      "brand_name": "FashionHub",
+      "rating": 4.8,
+      "description": "Trendy fashion and accessories",
+      "brand_logo": "https://cdn-icons-png.freepik.com/256/14375/14375830.png?ga=GA1.1.94081497.1723952170&semt=ais_hybrid",
+      "shop-Link": "https://fashionhub.com",
+      "category": "Fashion",
+      "isSaleOn": false,
+      "coupons": [
+        {
+          "coupon-code": "STYLE15",
+          "description": "15% off on new arrivals",
+          "expiry-date": "2025-01-15",
+          "condition": "Applicable on selected items",
+          "coupon_type": "Discount"
+        }
+      ]
+    },
+    {
+      "_id": "c1820b61fe3e9",
+      "brand_name": "BookWorld",
+      "rating": 4.7,
+      "description": "Online bookstore with wide variety",
+      "brand_logo": "https://cdn-icons-png.freepik.com/256/17187/17187866.png?ga=GA1.1.94081497.1723952170&semt=ais_hybrid",
+      "shop-Link": "https://bookworld.com",
+      "category": "Books",
+      "isSaleOn": true,
+      "coupons": [
+        {
+          "coupon-code": "READMORE",
+          "description": "Buy 2 get 1 free",
+          "expiry-date": "2024-10-20",
+          "condition": "On selected genres",
+          "coupon_type": "Bundle Offer"
+        }
+      ]
+    },
+    {
+      "_id": "d8b62c7a28f3a",
+      "brand_name": "GroceryExpress",
+      "rating": 4.2,
+      "description": "Fresh groceries delivered to your door",
+      "brand_logo": "https://cdn-icons-png.freepik.com/256/12414/12414259.png?ga=GA1.1.94081497.1723952170&semt=ais_hybrid",
+      "shop-Link": "https://groceryexpress.com",
+      "category": "Groceries",
+      "isSaleOn": true,
+      "coupons": [
+        {
+          "coupon-code": "FRESH10",
+          "description": "10% off on fresh produce",
+          "expiry-date": "2024-09-15",
+          "condition": "No minimum order value",
+          "coupon_type": "Discount"
+        }
+      ]
+    },
+    {
+      "_id": "e24abf39d1832",
+      "brand_name": "GymZone",
+      "rating": 4.9,
+      "description": "Fitness gear and accessories",
+      "brand_logo": "https://cdn-icons-png.freepik.com/256/4004/4004423.png?ga=GA1.1.94081497.1723952170&semt=ais_hybrid",
+      "shop-Link": "https://gymzone.com",
+      "category": "Fitness",
+      "isSaleOn": false,
+      "coupons": [
+        {
+          "coupon-code": "FIT50",
+          "description": "Flat 50% off on fitness gear",
+          "expiry-date": "2024-08-25",
+          "condition": "Limited stock available",
+          "coupon_type": "Flat Discount"
+        }
+      ]
+    },
+    {
+      "_id": "f6c0b9a841d4c",
+      "brand_name": "HomeDecors",
+      "rating": 4.3,
+      "description": "Stylish home decor items",
+      "brand_logo": "https://cdn-icons-png.freepik.com/256/9863/9863483.png?ga=GA1.1.94081497.1723952170&semt=ais_hybrid",
+      "shop-Link": "https://homedecors.com",
+      "category": "Home & Living",
+      "isSaleOn": true,
+      "coupons": [
+        {
+          "coupon-code": "HOME25",
+          "description": "25% off on all home decor",
+          "expiry-date": "2024-07-15",
+          "condition": "Valid on weekends only",
+          "coupon_type": "Discount"
+        }
+      ]
+    }
+  ]
+  

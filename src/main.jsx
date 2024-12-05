@@ -9,11 +9,23 @@ RouterProvider,
 
 } from "react-router-dom";
 import HomeLayout from './LayOuts/HomeLayout';
+import BandsDetails from './Pages/BandsDetails';
+import OnSell from './Components/OnSell';
 
 const router = createBrowserRouter([
 {
   path: "/",
-  element: <HomeLayout></HomeLayout>
+  element: <HomeLayout></HomeLayout>,
+  
+
+},
+
+{
+  path:"/brand/:id",
+  element:<BandsDetails></BandsDetails>,
+  loader:({ params }) => fetch(`topBrands.json`)
+  .then(res => res.json())
+  .then(data => data.find(brand => brand._id === params.id))
 
 },
 

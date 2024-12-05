@@ -1,0 +1,45 @@
+[
+    {
+      "_id": "1",
+      "brand_name": "TechMart",
+      "logo": "https://cdn-icons-png.freepik.com/256/6298/6298991.png?ga=GA1.1.94081497.1723952170&semt=ais_hybrid",
+      "discount": "30% OFF",
+      "expiry_date": "May 11, 2055"
+    },
+    {
+      "_id": "2",
+      "brand_name": "FashionHub",
+      "logo": "https://cdn-icons-png.freepik.com/256/14375/14375830.png?ga=GA1.1.94081497.1723952170&semt=ais_hybrid",
+      "discount": "20% OFF",
+      "expiry_date": "April 15, 2025"
+    },
+    {
+      "_id": "3",
+      "brand_name": "BookWorld",
+      "logo": "https://cdn-icons-png.freepik.com/256/17187/17187866.png?ga=GA1.1.94081497.1723952170&semt=ais_hybrid",
+      "discount": "50% OFF",
+      "expiry_date": "December 1, 2024"
+    },
+    {
+      "_id": "4",
+      "brand_name": "GroceryExpress",
+      "logo": "https://cdn-icons-png.freepik.com/256/12414/12414259.png?ga=GA1.1.94081497.1723952170&semt=ais_hybrid",
+      "discount": "15% OFF",
+      "expiry_date": "June 30, 2026"
+    },
+    {
+      "_id": "5",
+      "brand_name": "GymZone",
+      "logo": "https://cdn-icons-png.freepik.com/256/4004/4004423.png?ga=GA1.1.94081497.1723952170&semt=ais_hybrid",
+      "discount": "40% OFF",
+      "expiry_date": "March 12, 2030"
+    },
+    {
+      "_id": "6",
+      "brand_name": "HomeDecors",
+      "logo": "https://cdn-icons-png.freepik.com/256/9863/9863483.png?ga=GA1.1.94081497.1723952170&semt=ais_hybrid",
+      "discount": "25% OFF",
+      "expiry_date": "August 22, 2028"
+    }
+  ]
+  
