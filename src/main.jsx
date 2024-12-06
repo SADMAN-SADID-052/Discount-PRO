@@ -14,6 +14,7 @@ import OnSell from './Components/OnSell';
 import AuthLayout from './LayOuts/AuthLayout';
 import Login from './Pages/Login';
 import Register from './Pages/Register';
+import AuthProvider from './Provider/AuthProvider';
 
 const router = createBrowserRouter([
 {
@@ -67,6 +68,12 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-  <RouterProvider router={router}/>
+ <AuthProvider>
+  
+ <RouterProvider router={router}/>
+
+ </AuthProvider>
+
+ 
   </StrictMode>,
 )

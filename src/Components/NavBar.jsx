@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext} from "../Provider/AuthProvider";
 
 const NavBar = () => {
+
+  const { user } = useContext(AuthContext);
 
     const links = 
     <>
@@ -28,6 +31,8 @@ const NavBar = () => {
   
   
   <div className='flex gap-2 items-center btn ml-2'>
+
+    <div>{user && user.name}</div>
   <img className='w-6' src="https://img.icons8.com/?size=160&id=CPookyWndobk&format=png" alt="" />
   <a>My-Profile</a>
     
