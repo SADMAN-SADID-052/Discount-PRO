@@ -79,7 +79,7 @@ const NavBar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <div className='flex items-center gap-2 btn btn-outline'><a className="font-bold text-white text-xl">Login</a><img className='w-7' src="https://img.icons8.com/?size=128&id=WLd2TDej6yWd&format=png" alt="" /></div>
+    <Link to="/auth/login" className='flex items-center gap-2 btn btn-outline'><a className="font-bold text-white text-xl">Login</a><img className='w-7' src="https://img.icons8.com/?size=128&id=WLd2TDej6yWd&format=png" alt="" /></Link>
   </div>
 </div>
             

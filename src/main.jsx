@@ -11,6 +11,9 @@ RouterProvider,
 import HomeLayout from './LayOuts/HomeLayout';
 import BandsDetails from './Pages/BandsDetails';
 import OnSell from './Components/OnSell';
+import AuthLayout from './LayOuts/AuthLayout';
+import Login from './Pages/Login';
+import Register from './Pages/Register';
 
 const router = createBrowserRouter([
 {
@@ -35,9 +38,20 @@ const router = createBrowserRouter([
 },
 
 {
-
   path:"auth",
-  element:<div>Login</div>
+  element:<AuthLayout></AuthLayout>,
+  children:[
+
+    {
+      path:"/auth/login",
+      element:<Login></Login>,
+    },
+    {
+      path:"/auth/register",
+      element: <Register></Register>,
+    }
+    
+  ]
 },
 
 {
