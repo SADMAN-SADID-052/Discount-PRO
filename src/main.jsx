@@ -16,6 +16,10 @@ import Login from './Pages/Login';
 import Register from './Pages/Register';
 import AuthProvider from './Provider/AuthProvider';
 
+import { ToastContainer } from 'react-toastify'; // Import Toastify
+import 'react-toastify/dist/ReactToastify.css';
+
+
 const router = createBrowserRouter([
 {
   path: "/",
@@ -27,7 +31,7 @@ const router = createBrowserRouter([
 {
   path:"/brand/:id",
   element:<BandsDetails></BandsDetails>,
-  loader:({ params }) => fetch(`topBrands.json`)
+  loader:({ params }) => fetch(`/topBrands.json`)
   .then(res => res.json())
   .then(data => data.find(brand => brand._id === params.id))
 
@@ -64,6 +68,20 @@ const router = createBrowserRouter([
 
 ]);
 
+<ToastContainer
+position="top-center"
+autoClose={3000}
+hideProgressBar={false}
+newestOnTop={false}
+closeOnClick
+rtl={false}
+pauseOnFocusLoss
+draggable
+pauseOnHover
+theme="light"
+/>
+
+
 
 
 createRoot(document.getElementById('root')).render(
@@ -72,8 +90,10 @@ createRoot(document.getElementById('root')).render(
   
  <RouterProvider router={router}/>
 
+<ToastContainer></ToastContainer>
  </AuthProvider>
 
  
   </StrictMode>,
 )
+

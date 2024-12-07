@@ -32,7 +32,7 @@ const NavBar = () => {
   
   <div className='flex gap-2 items-center btn ml-2'>
 
-    <div>{user && user.name}</div>
+    
   <img className='w-6' src="https://img.icons8.com/?size=160&id=CPookyWndobk&format=png" alt="" />
   <a>My-Profile</a>
     
@@ -40,6 +40,8 @@ const NavBar = () => {
   
   
   </Link>
+
+  <div className='flex items-center'>{user && user.email}</div>
  
     
     </>

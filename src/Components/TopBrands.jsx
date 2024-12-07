@@ -16,7 +16,7 @@ const BrandMarquee = () => {
 
   
   const handleLogoClick = (id) => {
-    navigate(`/brand/${id}`); // Navigate to brand details route
+    navigate(`/brand/${id}`); 
   };
 
   return (
