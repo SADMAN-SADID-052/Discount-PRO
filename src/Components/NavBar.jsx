@@ -41,7 +41,7 @@ const NavBar = () => {
   
   </Link>
 
-  <div className='flex items-center'>{user && user.email}</div>
+
  
     
     </>
@@ -89,12 +89,46 @@ const NavBar = () => {
   
   <div className="navbar-end">
 
-    {
-      user && user?.email ? (<button 
+<div className='flex justify-between gap-5'>
+  
+<div className=''>{user &&
+  
+  <div className='flex gap-4 items-center'>
+
+    <p className='btn btn-default'>{user.email}</p>
+    <img className='w-14 rounded-full border-2 border-white' src={user.photoURL} alt="" />
+   
+
+  </div>
+}
+  
+  
+  </div>
+<div>
+
+  
+{
+      user && user?.email ? (
+      <button
         onClick={logOut}
-        className='flex items-center gap-2 btn btn-outline'>LogOut</button>):  (<Link to="/auth/login" className='flex items-center gap-2 btn btn-outline'><p className="font-bold text-white text-xl">Login</p><img className='w-7' src="https://img.icons8.com/?size=128&id=WLd2TDej6yWd&format=png" alt="" /></Link>
+        className='btn btn-error'>
+          <div className='flex items-center ml-1'>
+          
+          <p className="font-bold text-white text-sm">Logout</p>
+          
+          </div>
+          
+          </button>): 
+
+         (<Link to="/auth/login" className='flex items-center gap-2 btn btn-outline'><p className="font-bold text-white text-xl">Login</p><img className='w-7' src="https://img.icons8.com/?size=128&id=WLd2TDej6yWd&format=png" alt="" /></Link>
 
       )}
+
+</div>
+</div>
+
+
+    
       </div>
    
    

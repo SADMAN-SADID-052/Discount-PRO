@@ -2,9 +2,41 @@ import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../Provider/AuthProvider";
 import { toast } from 'react-toastify';
+import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
+import auth from "../Components/FireBase/firebaseLogin";
 
 
 const Login = () => {
+
+  const provider = new GoogleAuthProvider();
+
+  const handleGoogleSignIn = () =>{
+
+    signInWithPopup(auth,provider)
+    .then((result)=>{
+      console.log(result.user)
+      toast.success('LoggedIn Successfully!!', {
+        position: "top-center",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+        
+        });
+
+    })
+
+
+    .catch(error =>{
+
+      console.log(error);
+    })
+  }
+
+
 
   const{userLogin,setUser} = useContext(AuthContext)
 
@@ -82,6 +114,10 @@ const handleSubmit =(e)=>
           <button className="btn btn-neutral">Login</button>
         </div>
       </form>
+       
+<div className='text-center mb-4'>
+<button onClick={handleGoogleSignIn} className='btn btn-outline'>Log In With Google</button>
+</div>
 
       <p className="text-center mb-3">New User? <Link className="text-blue-500" to="/auth/register">Register</Link></p>
     </div>
