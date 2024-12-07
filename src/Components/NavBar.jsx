@@ -4,7 +4,7 @@ import { AuthContext} from "../Provider/AuthProvider";
 
 const NavBar = () => {
 
-  const { user } = useContext(AuthContext);
+  const { user,logOut } = useContext(AuthContext);
 
     const links = 
     <>
@@ -85,9 +85,19 @@ const NavBar = () => {
      }
     </ul>
   </div>
+
+  
   <div className="navbar-end">
-    <Link to="/auth/login" className='flex items-center gap-2 btn btn-outline'><a className="font-bold text-white text-xl">Login</a><img className='w-7' src="https://img.icons8.com/?size=128&id=WLd2TDej6yWd&format=png" alt="" /></Link>
-  </div>
+
+    {
+      user && user?.email ? (<button 
+        onClick={logOut}
+        className='flex items-center gap-2 btn btn-outline'>LogOut</button>):  (<Link to="/auth/login" className='flex items-center gap-2 btn btn-outline'><p className="font-bold text-white text-xl">Login</p><img className='w-7' src="https://img.icons8.com/?size=128&id=WLd2TDej6yWd&format=png" alt="" /></Link>
+
+      )}
+      </div>
+   
+   
 </div>
             
         </div>

@@ -5,8 +5,38 @@ import { AuthContext } from '../Provider/AuthProvider';
 
 import { use } from 'react';
 import { toast } from 'react-toastify';
+import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth';
+import auth from '../Components/FireBase/firebaseLogin';
+
 
 const Register = () => {
+
+ const provider = new GoogleAuthProvider();
+  const handleGoogleSignIn = () =>{
+
+    signInWithPopup(auth,provider)
+
+    .then((result) => {
+      console.log(result)
+      toast.success('Registration Successful!!', {
+        position: "top-center",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+        
+        });
+      
+    })
+
+    .catch(error =>{
+
+      console.log(error)
+    })
+  }
   
   const [success,setSuccess] = useState(false);
   const [errorMessage,setErrorMessage] = useState('');
@@ -48,7 +78,18 @@ const Register = () => {
       const user = result.user;
       setUser(user);
       console.log(user);
-      setSuccess(true)
+      toast.success('Registration Successful!!', {
+        position: "top-center",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+        
+        });
+      
 
  
 
@@ -125,11 +166,14 @@ const Register = () => {
 {
   errorMessage && <p className='text-red-500  text-center'>{errorMessage}</p>
 }
-{
-  success && toast.success('Operation completed successfully!')
-}
+
+
 
  <p className="text-center mb-3">Already have an account? <Link className="text-blue-500" to="/auth/login">Login</Link></p>
+
+<div className='text-center mb-4'>
+<button onClick={handleGoogleSignIn} className='btn btn-outline'>Log In With Google</button>
+</div>
 </div>
             
         </div>

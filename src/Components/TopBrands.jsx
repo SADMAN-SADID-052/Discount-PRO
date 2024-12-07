@@ -8,7 +8,7 @@ const BrandMarquee = () => {
 
   // Fetch the JSON data
   useEffect(() => {
-    fetch('topBrands.json')
+    fetch('allData.json')
       .then((response) => response.json())
       .then((data) => setCoupons(data))
       .catch((error) => console.error('Error fetching data:', error));
@@ -38,14 +38,17 @@ const BrandMarquee = () => {
 
            
            <img
-              src={coupon.logo}
+              src={coupon.brand_logo}
               alt={coupon.brand_name}
               className="w-16 mx-auto object-contain rounded-full border-2 border-gray-300 p-2"
             />
            
            
 
+            <div className='text-center'>
             <p className='text-xl font-semibold mt-2'>{coupon.brand_name}</p>
+            <p className='text-slate-500'>Category : {coupon.category}</p>
+            </div>
            </div>
           </div>
         ))}

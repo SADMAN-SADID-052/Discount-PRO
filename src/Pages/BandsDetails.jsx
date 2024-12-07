@@ -1,6 +1,6 @@
 import React from 'react';
 import NavBar from '../Components/NavBar';
-import { useLoaderData } from 'react-router-dom';
+import { useActionData, useLoaderData } from 'react-router-dom';
 import Footer from '../Components/Footer';
 
 const BandsDetails = () => {
@@ -15,7 +15,10 @@ const BandsDetails = () => {
             <main>
               {
                 data.brand_name
+                
               }
+
+              <p>{data.description}</p>
             </main>
 
             <footer>

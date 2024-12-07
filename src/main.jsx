@@ -18,6 +18,8 @@ import AuthProvider from './Provider/AuthProvider';
 
 import { ToastContainer } from 'react-toastify'; // Import Toastify
 import 'react-toastify/dist/ReactToastify.css';
+import BrandsPage from './Pages/BrandsPage';
+import BrandsPageLayout from './LayOuts/BrandsPageLayout';
 
 
 const router = createBrowserRouter([
@@ -31,7 +33,7 @@ const router = createBrowserRouter([
 {
   path:"/brand/:id",
   element:<BandsDetails></BandsDetails>,
-  loader:({ params }) => fetch(`/topBrands.json`)
+  loader:({ params }) => fetch(`/allData.json`)
   .then(res => res.json())
   .then(data => data.find(brand => brand._id === params.id))
 
@@ -60,6 +62,12 @@ const router = createBrowserRouter([
 },
 
 {
+
+  path:"/brands",
+  element:<BrandsPageLayout></BrandsPageLayout>
+},
+
+{
   path:"*",
   element:<h2>Error </h2>
 }
@@ -78,9 +86,9 @@ rtl={false}
 pauseOnFocusLoss
 draggable
 pauseOnHover
-theme="light"
-/>
+theme="colored"
 
+/>
 
 
 
