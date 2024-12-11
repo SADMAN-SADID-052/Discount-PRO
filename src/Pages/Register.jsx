@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../Provider/AuthProvider';
+import { IoIosEye,IoIosEyeOff } from "react-icons/io";
 
 
 import { use } from 'react';
@@ -44,6 +45,7 @@ const Register = () => {
   
   const [success,setSuccess] = useState(false);
   const [errorMessage,setErrorMessage] = useState('');
+  const [showPassword,setshowPassword] = useState(false);
 
   const {createNewUser,setUser} = useContext(AuthContext);
   const handleSubmit = (e) => {
@@ -151,18 +153,31 @@ const Register = () => {
      className="input input-bordered" 
      required />
   </div>
-  <div className="form-control">
+  <div className="form-control relative">
     <label className="label">
       <span className="label-text">Password</span>
     </label>
     <input 
-    type="password" 
+    type={showPassword ? 'text' : 'password'} 
     name = "password"
     placeholder="password" 
     className="input input-bordered" 
     required />
+
+    <button 
+    onClick={() => setshowPassword(!showPassword)}
+    className='btn btn-sm absolute right-6 top-10'>
+      {
+        showPassword ? <IoIosEyeOff /> : <IoIosEye />
+      }
+      
+      </button>
    
   </div>
+
+  
+
+
   <div className="form-control mt-3">
     <button className="btn btn-neutral">Register</button>
   </div>
