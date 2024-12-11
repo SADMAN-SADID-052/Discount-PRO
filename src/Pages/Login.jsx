@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Provider/AuthProvider";
 import { toast } from 'react-toastify';
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
@@ -7,6 +7,8 @@ import auth from "../Components/FireBase/firebaseLogin";
 
 
 const Login = () => {
+
+  const navigate = useNavigate(); 
 
   const provider = new GoogleAuthProvider();
 
@@ -27,6 +29,8 @@ const Login = () => {
         
         });
 
+        navigate('/');
+
     })
 
 
@@ -39,6 +43,10 @@ const Login = () => {
 
 
   const{userLogin,setUser} = useContext(AuthContext)
+
+  const location = useLocation();
+ 
+  console.log(location)
 
 const handleSubmit =(e)=>
 {
@@ -54,6 +62,7 @@ const handleSubmit =(e)=>
  
     const user = result.user;
     setUser(user);
+
     toast.success('Successfully LoggedIn!!', {
       position: "top-center",
       autoClose: 3000,
@@ -65,6 +74,8 @@ const handleSubmit =(e)=>
       theme: "dark",
       
       });
+
+      navigate(location?.state ? location.state : "/");
 
   })
 
@@ -107,7 +118,11 @@ const handleSubmit =(e)=>
           className="input input-bordered" 
           required />
           <label className="label">
-            <a href="#" className="label-text-alt link link-hover text-blue-500">Forgot password?</a>
+            <Link to="/forgot-password"
+
+            // state={{email: e.target.email?.value}}
+            
+            className="label-text-alt link link-hover text-blue-500">Forgot password?</Link>
           </label>
         </div>
         <div className="form-control mt-3">

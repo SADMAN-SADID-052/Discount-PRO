@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../Provider/AuthProvider';
 
 
@@ -10,6 +10,8 @@ import auth from '../Components/FireBase/firebaseLogin';
 
 
 const Register = () => {
+
+  const navigate = useNavigate(); 
 
  const provider = new GoogleAuthProvider();
   const handleGoogleSignIn = () =>{
@@ -29,6 +31,8 @@ const Register = () => {
         theme: "dark",
         
         });
+
+        navigate('/');
       
     })
 
@@ -90,7 +94,7 @@ const Register = () => {
         
         });
       
-
+        navigate('/');
  
 
     })

@@ -1,8 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 
 function BrandCard({ brand }) {
+
   return (
-    <div className="bg-white shadow-md rounded-lg p-4 flex items-center justify-between gap-24">
+    <div className="bg-white shadow-md rounded-lg p-4 flex items-center justify-between gap-24 px-6">
    <div className="">
    <img
         src={brand.brand_logo}
@@ -23,12 +26,13 @@ function BrandCard({ brand }) {
           Sale is On!
         </div>
       )}
-      <button
+      <Link to={`/brands/${brand._id}`}
         className="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600"
         // onClick={() => window.open(brand["shop-Link"], "_blank")}
+        
       >
         View Coupons
-      </button>
+      </Link>
     </div>
     </div>
   );

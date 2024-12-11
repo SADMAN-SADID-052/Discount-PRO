@@ -20,6 +20,10 @@ import { ToastContainer } from 'react-toastify'; // Import Toastify
 import 'react-toastify/dist/ReactToastify.css';
 import BrandsPage from './Pages/BrandsPage';
 import BrandsPageLayout from './LayOuts/BrandsPageLayout';
+import Coupon from './Pages/Coupon';
+import PrivateRouter from './Routs/PrivateRouter';
+import MyProfile from './Pages/MyProfile';
+import ForGetPass from './Pages/ForGetPass';
 
 
 const router = createBrowserRouter([
@@ -40,8 +44,30 @@ const router = createBrowserRouter([
 },
 
 {
+  path:"/brands/:id",
+  element:(<PrivateRouter>
+
+<Coupon></Coupon>
+  </PrivateRouter>),
+  loader:({ params }) => fetch(`/allData.json`)
+  .then(res => res.json())
+  .then(data => data.find(brand => brand._id === params.id))
+
+
+},
+
+
+{
   path:"/coupon",
   element:<div>Coupone Layout</div>
+},
+
+{
+  path:"/myProfile",
+  element:(<PrivateRouter>
+
+<MyProfile></MyProfile>
+  </PrivateRouter>)
 },
 
 {
@@ -59,6 +85,11 @@ const router = createBrowserRouter([
     }
     
   ]
+},
+
+{
+  path:"/forgot-password",
+  element:<ForGetPass></ForGetPass>
 },
 
 {
