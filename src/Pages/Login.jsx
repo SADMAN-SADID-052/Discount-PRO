@@ -117,6 +117,8 @@ const handleSubmit =(e)=>
           placeholder="password" 
           className="input input-bordered" 
           required />
+
+    
           <label className="label">
             <Link to="/forgot-password"
 

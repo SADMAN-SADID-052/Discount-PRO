@@ -1,6 +1,8 @@
 import React from 'react';
 
 const Slider = () => {
+
+  console.log(import.meta.env.VITE_a)
     return (
         <div>
 
