@@ -13,10 +13,10 @@ const OnSell = () => {
   }, []);
 
   return (
-  <div className="mt-6">
+  <div className="mt-6 mb-4">
 
        <h2 className="text-2xl font-bold text-center mb-4">Brands on Sell</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-8 bg-gradient-to-r from-blue-200 via-gray-50 to-green-100">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-8 bg-gradient-to-r from-blue-200 via-gray-50 to-green-100 rounded-2xl">
       {brands.map((brand) => (
         <div
           key={brand._id}

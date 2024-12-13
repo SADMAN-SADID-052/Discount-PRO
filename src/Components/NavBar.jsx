@@ -74,7 +74,7 @@ const NavBar = () => {
        }
       </ul>
     </div>
-    <img className='w-16 flex items-center' src="https://img.icons8.com/?size=160&id=efUxRhRSMGmd&format=png" alt="" />
+    <img className='w-16 flex items-center' src="https://cdn-icons-png.freepik.com/256/7097/7097082.png?ga=GA1.1.94081497.1723952170&semt=ais_hybrid" alt="" />
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
