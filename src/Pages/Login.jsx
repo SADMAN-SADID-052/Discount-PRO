@@ -16,7 +16,7 @@ const Login = () => {
 
     signInWithPopup(auth,provider)
     .then((result)=>{
-      console.log(result.user)
+      // console.log(result.user)
       toast.success('LoggedIn Successfully!!', {
         position: "top-center",
         autoClose: 3000,
@@ -36,7 +36,17 @@ const Login = () => {
 
     .catch(error =>{
 
-      console.log(error);
+      toast.error('LogIn Not Successful!!', {
+        position: "top-center",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+        
+        });
     })
   }
 
@@ -46,7 +56,7 @@ const Login = () => {
 
   const location = useLocation();
  
-  console.log(location)
+  // console.log(location)
 
 const handleSubmit =(e)=>
 {
@@ -55,7 +65,7 @@ const handleSubmit =(e)=>
 
   const email = e.target.email.value;
   const password = e.target.password.value;
-  console.log(email,password);
+  // console.log(email,password);
 
   userLogin(email,password)
   .then(result =>{

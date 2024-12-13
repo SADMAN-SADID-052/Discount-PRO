@@ -20,7 +20,7 @@ const Register = () => {
     signInWithPopup(auth,provider)
 
     .then((result) => {
-      console.log(result)
+      // console.log(result)
       toast.success('Registration Successful!!', {
         position: "top-center",
         autoClose: 3000,
@@ -38,8 +38,18 @@ const Register = () => {
     })
 
     .catch(error =>{
+      toast.error('Registration Not Successful!!', {
+        position: "top-center",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+        
+        });
 
-      console.log(error)
     })
   }
   
@@ -56,7 +66,7 @@ const Register = () => {
     const photo = e.target.photo.value; 
     const password = e.target.password.value; 
   
-    console.log(name,email,photo,password); 
+    // console.log(name,email,photo,password); 
 
 
     setErrorMessage('');
@@ -83,7 +93,7 @@ const Register = () => {
     .then((result)=>{
       const user = result.user;
       setUser(user);
-      console.log(user);
+      // console.log(user);
       toast.success('Registration Successful!!', {
         position: "top-center",
         autoClose: 3000,

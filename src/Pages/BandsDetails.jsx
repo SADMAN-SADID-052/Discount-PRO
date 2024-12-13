@@ -5,7 +5,7 @@ import Footer from '../Components/Footer';
 
 const BandsDetails = () => {
     const data = useLoaderData();
-    console.log(data);
+    // console.log(data);
     return (
         <div>
             <header>

@@ -13,14 +13,14 @@ const OnSell = () => {
   }, []);
 
   return (
-  <div>
+  <div className="mt-6">
 
-    Brands on Sell
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-8">
+       <h2 className="text-2xl font-bold text-center mb-4">Brands on Sell</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-8 bg-gradient-to-r from-blue-200 via-gray-50 to-green-100">
       {brands.map((brand) => (
         <div
           key={brand._id}
-          className="border border-gray-200 rounded-lg shadow-lg p-6"
+          className="border border-gray-400  shadow-lg p-6 rounded-xl"
         >
           <img
             src={brand.brand_logo}
