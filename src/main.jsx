@@ -24,6 +24,8 @@ import Coupon from './Pages/Coupon';
 import PrivateRouter from './Routs/PrivateRouter';
 import MyProfile from './Pages/MyProfile';
 import ForGetPass from './Pages/ForGetPass';
+import Error404 from './Pages/Error404';
+import About from './Pages/About';
 
 
 const router = createBrowserRouter([
@@ -99,8 +101,15 @@ const router = createBrowserRouter([
 },
 
 {
+  path:"/about",
+  element:<About></About>
+
+
+},
+
+{
   path:"*",
-  element:<h2>Error </h2>
+  element:<Error404></Error404>
 }
 
 
