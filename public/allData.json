@@ -5,7 +5,7 @@
       "rating": 4.5,
       "description": "TechMart is your one-stop destination for all things tech! At TechMart, we pride ourselves on providing the latest and most innovative gadgets, electronics, and accessories to meet the needs of tech enthusiasts, professionals, and everyday users alike.",
       "brand_logo": "https://cdn-icons-png.freepik.com/256/6298/6298991.png?ga=GA1.1.94081497.1723952170&semt=ais_hybrid",
-      "shop-Link": "https://techmart.com",
+      "shop-Link": "https://www.ryans.com/",
       "category": "Electronics",
       "isSaleOn": true,
       "coupons": [
@@ -31,7 +31,7 @@
       "rating": 4.8,
       "description": "FashionHub is your gateway to the world of style, elegance, and self-expression. At FashionHub, we blend contemporary trends with timeless designs to offer a versatile range of fashion choices for every occasions.",
       "brand_logo": "https://cdn-icons-png.freepik.com/256/14375/14375830.png?ga=GA1.1.94081497.1723952170&semt=ais_hybrid",
-      "shop-Link": "https://fashionhub.com",
+      "shop-Link": "https://www.aarong.com/",
       "category": "Fashion",
       "isSaleOn": false,
       "coupons": [
@@ -50,7 +50,7 @@
       "rating": 4.7,
       "description": "BookWorld is a haven for book lovers, a place where stories come alive and knowledge knows no bounds. At BookWorld, we are passionate about connecting readers with books that inspire, educate, and entertain. ",
       "brand_logo": "https://cdn-icons-png.freepik.com/256/17187/17187866.png?ga=GA1.1.94081497.1723952170&semt=ais_hybrid",
-      "shop-Link": "https://bookworld.com",
+      "shop-Link": "https://www.rokomari.com/book",
       "category": "Books",
       "isSaleOn": true,
       "coupons": [
@@ -69,7 +69,7 @@
       "rating": 4.2,
       "description": "GroceryExpress is your trusted partner for fast, convenient, and reliable grocery shopping. Designed to fit seamlessly into your busy lifestyle, GroceryExpress brings everything you need, right to your doorstep.",
       "brand_logo": "https://cdn-icons-png.freepik.com/256/12414/12414259.png?ga=GA1.1.94081497.1723952170&semt=ais_hybrid",
-      "shop-Link": "https://groceryexpress.com",
+      "shop-Link": "https://www.shwapno.com/?srsltid=AfmBOopDYGSkWYY7E_aYMkmQvIJ7Jixtn_GrKnkYcUZxz9AyXbD-qh-s",
       "category": "Groceries",
       "isSaleOn": true,
       "coupons": [
@@ -88,7 +88,7 @@
       "rating": 4.9,
       "description": "GymZone is your ultimate fitness companion, empowering you to achieve your health and wellness goals with confidence. At GymZone, we are dedicated to creating a community where fitness meets motivation, innovation, and excellence.",
       "brand_logo": "https://cdn-icons-png.freepik.com/256/4004/4004423.png?ga=GA1.1.94081497.1723952170&semt=ais_hybrid",
-      "shop-Link": "https://gymzone.com",
+      "shop-Link": "https://fitnessmart.com.bd/product-category/gym-equipment/",
       "category": "Fitness",
       "isSaleOn": false,
       "coupons": [
@@ -107,7 +107,7 @@
       "rating": 4.3,
       "description": "Transform your living space with a curated collection of stylish home decor items that blend functionality with aesthetic appeal. From sleek geometric shelves to display your treasures to plush velvet accent chairs that exude luxury, each piece is designed to enhance your home's charm. Adorn your walls with abstract art prints or ornate mirrors, creating a sense of depth and sophistication.",
       "brand_logo": "https://cdn-icons-png.freepik.com/256/9863/9863483.png?ga=GA1.1.94081497.1723952170&semt=ais_hybrid",
-      "shop-Link": "https://homedecors.com",
+      "shop-Link": "https://www.aarong.com/home-decor",
       "category": "Home & Living",
       "isSaleOn": true,
       "coupons": [

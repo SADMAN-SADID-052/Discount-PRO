@@ -76,6 +76,23 @@ const NavBar = () => {
     </div>
     <img className='w-16 flex items-center' src="https://cdn-icons-png.freepik.com/256/7097/7097082.png?ga=GA1.1.94081497.1723952170&semt=ais_hybrid" alt="" />
   </div>
+
+  <div className=''>{user &&
+
+    
+  
+<div className='flex gap-4 items-center'>
+
+  <p className='btn btn-default'>{user.email}</p>
+  
+ 
+
+</div>
+
+}
+
+
+</div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
      {
@@ -90,20 +107,25 @@ const NavBar = () => {
   <div className="navbar-end">
 
 <div className='flex justify-between gap-5'>
-  
+
 <div className=''>{user &&
+
+    
   
-  <div className='flex gap-4 items-center'>
+<div className='flex gap-4 items-center'>
 
-    <p className='btn btn-default'>{user.email}</p>
-    <img className='w-14 rounded-full border-2 border-white' src={user.photoURL} alt="" />
-   
+  
+  <img className='w-14 rounded-full border-2 border-white' src={user.photoURL} alt="" />
+ 
 
-  </div>
+</div>
+
 }
+
+
+</div>
   
-  
-  </div>
+
 <div>
 
   
