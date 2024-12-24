@@ -46,7 +46,7 @@ const NavBar = () => {
     
     </>
     return (
-        <div className='bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg'>
+        <div className='bg-gradient-to-r from-pink-200 to-cyan-300 rounded-lg'>
 
 <div className="navbar">
   <div className="navbar-start">

@@ -2,18 +2,23 @@ import React, { useContext } from 'react';
 import { AuthContext } from '../Provider/AuthProvider';
 import NavBar from '../Components/NavBar';
 import Footer from '../Components/Footer';
+import { Link } from 'react-router-dom';
 
 const MyProfile = () => {
 
     const {user} = useContext(AuthContext)
     return (
-        <div className='max-w-6xl mx-auto'>
+        <div>
 
-         <header>
-            <NavBar></NavBar>
-         </header>
+<div className='max-w-6xl mx-auto'>
 
-         <section>
+  
+<header>
+  <NavBar></NavBar>
+</header>
+
+
+<section>
 <div
   className="hero mt-2 rounded-2xl"
   style={{
@@ -32,7 +37,7 @@ const MyProfile = () => {
 </div>
 </section>
 
-            {user &&
+{user &&
   
 //   <div className='max-w-3xl mx-auto '>
 //      <h2>{user.displayName}</h2>
@@ -49,17 +54,21 @@ const MyProfile = () => {
     <img
       src={user.photoURL}
       alt="Shoes"
-      className="rounded-xl" />
+      className="rounded-xl border-2 border-black w-40" />
   </figure>
   <div className="card-body items-center text-center">
     <h2 className="card-title">{user.displayName}</h2>
     <p>Email : {user.email}</p>
-    <div className="card-actions">
+    <Link
+    to="/update-profile"
+    className="card-actions">
       <button className="btn btn-primary font-bold mt-6">Update</button>
-    </div>
+    </Link>
   </div>
 </div>
 }
+
+</div>
 
 <footer>
     <Footer></Footer>

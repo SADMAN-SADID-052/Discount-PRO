@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { createContext } from "react";
 import app from "../Components/FireBase/firebase.config";
-import { createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signOut } from "firebase/auth";
+import { createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signOut, updateProfile } from "firebase/auth";
 
 export const AuthContext = createContext();
 
@@ -37,6 +37,26 @@ const logOut = () =>{
 
 }
 
+const updateUserProfile = async (displayName, photoURL) => {
+    if (!auth.currentUser) {
+        throw new Error('No user is currently logged in.');
+    }
+
+    try {
+        await updateProfile(auth.currentUser, { displayName, photoURL });
+        // Update the local user state to reflect the changes
+        setUser((prevUser) => ({
+            ...prevUser,
+            displayName,
+            photoURL,
+        }));
+        console.log('Profile updated successfully!');
+    } catch (error) {
+        console.error('Error updating profile:', error);
+        throw error;
+    }
+};
+
 
     const authInfo = {
         user,
@@ -44,6 +64,7 @@ const logOut = () =>{
         createNewUser,
         logOut,
         userLogin,
+        updateUserProfile,
         loading
     };
 

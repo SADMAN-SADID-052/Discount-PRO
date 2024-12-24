@@ -26,6 +26,7 @@ import MyProfile from './Pages/MyProfile';
 import ForGetPass from './Pages/ForGetPass';
 import Error404 from './Pages/Error404';
 import About from './Pages/About';
+import UpdateProfile from './Pages/UpdateProfile';
 
 
 const router = createBrowserRouter([
@@ -70,6 +71,15 @@ const router = createBrowserRouter([
 
 <MyProfile></MyProfile>
   </PrivateRouter>)
+},
+
+
+{
+  path:"/update-profile",
+  element:(<PrivateRouter>
+
+    <UpdateProfile></UpdateProfile>
+      </PrivateRouter>)
 },
 
 {

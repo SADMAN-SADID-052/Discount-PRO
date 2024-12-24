@@ -10,9 +10,10 @@ import Success_story from '../Components/Success_story';
 
 const HomeLayout = () => {
     return (
-        <div className='max-w-6xl mx-auto'>
+        <div >
             
-            <nav>
+         <div className='max-w-6xl mx-auto'>
+         <nav>
                 <NavBar></NavBar>
             </nav>
 
@@ -40,6 +41,7 @@ const HomeLayout = () => {
                 </section>
                 <Outlet></Outlet>
             </main>
+         </div>
             <footer>
 
                 <Footer></Footer>

@@ -15,14 +15,16 @@ const Coupon = () => {
 
     return (
         
-        <div className="max-w-6xl mx-auto p-6">
+        <div>
 
-            <header className='mb-10'>
+         <div className="max-w-6xl mx-auto">
+
+         <header className=''>
             <NavBar></NavBar>
             </header>
 
             {/* Brand Header */}
-            <div className="text-center mb-10">
+            <div className="text-center mb-10 mt-4">
                 <img
                     src={cdata.brand_logo}
                     alt={`${cdata.brand_name} Logo`}
@@ -76,6 +78,7 @@ const Coupon = () => {
                 ))}
             </main>
 
+         </div>
             <footer className='mt-8'>
 
                 <Footer></Footer>
