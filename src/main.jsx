@@ -61,11 +61,6 @@ const router = createBrowserRouter([
 
 
 {
-  path:"/coupon",
-  element:<div>Coupone Layout</div>
-},
-
-{
   path:"/myProfile",
   element:(<PrivateRouter>
 

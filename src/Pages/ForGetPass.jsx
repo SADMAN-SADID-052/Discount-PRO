@@ -1,10 +1,15 @@
 import { sendPasswordResetEmail } from 'firebase/auth';
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import auth from '../Components/FireBase/firebaseLogin';
+import NavBar from '../Components/NavBar';
+import { AuthContext } from '../Provider/AuthProvider';
 
 const ForGetPass = () => {
+
+   
+   const { user} = useContext(AuthContext); 
 
     const location = useLocation();
     const navigate = useNavigate();
@@ -41,7 +46,13 @@ const ForGetPass = () => {
 
 
     return (
-        <div className="min-h-screen flex justify-center items-center">
+       <div>
+
+        <header className='max-w-6xl mx-auto'>
+          <NavBar></NavBar>
+        </header>
+
+<div className="min-h-screen flex justify-center items-center">
         <div className="card bg-base-100 w-full max-w-sm shadow-2xl">
           <h2 className="text-2xl font-bold text-center mt-4">Reset Password</h2>
           <form onSubmit={(e) => handleResetPassword(e)} className="card-body">
@@ -64,6 +75,14 @@ const ForGetPass = () => {
           </form>
         </div>
       </div>
+
+
+      <footer>
+
+        
+    
+      </footer>
+       </div>
     );
 };
 
