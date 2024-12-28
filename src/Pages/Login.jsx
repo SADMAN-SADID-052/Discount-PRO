@@ -132,7 +132,7 @@ const handleSubmit =(e)=>
           <label className="label">
             <Link to="/forgot-password"
 
-            // state={{email: e.target.email?.value}}
+           
             
             className="label-text-alt link link-hover text-blue-500">Forgot password?</Link>
           </label>

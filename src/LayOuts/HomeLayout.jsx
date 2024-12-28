@@ -7,6 +7,7 @@ import Footer from '../Components/Footer';
 import OnSell from '../Components/OnSell';
 import How_it_work from '../Components/How_it_work';
 import Success_story from '../Components/Success_story';
+import Header from '../Components/Header';
 
 const HomeLayout = () => {
     return (
@@ -14,6 +15,8 @@ const HomeLayout = () => {
             
          <div className='max-w-6xl mx-auto'>
          <nav>
+
+                <Header></Header>
                 <NavBar></NavBar>
             </nav>
 

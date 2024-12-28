@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function BrandCard({ brand }) {
 
   return (
-    <div className="bg-white shadow-md rounded-lg p-4 flex items-center justify-between gap-24 px-6">
+    <div className="bg-white shadow-md rounded-lg p-4 flex flex-col md:flex-row items-center justify-between gap-24 px-6">
    <div className="">
    <img
         src={brand.brand_logo}

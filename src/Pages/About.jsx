@@ -10,7 +10,7 @@ const About = () => {
             </header>
 
             <main className=''>
-                <div className=' text-purple-600 text-5xl p-36 text-center font-bold'>
+                <div className=' text-purple-600 text-xl md:text-5xl p-36 text-center font-bold'>
                     Welcome To About Page
                 </div>
             </main>
