@@ -2,6 +2,7 @@ import React from 'react';
 import NavBar from '../Components/NavBar';
 import { useActionData, useLoaderData } from 'react-router-dom';
 import Footer from '../Components/Footer';
+import Header from '../Components/Header';
 
 const BandsDetails = () => {
     const data = useLoaderData();
@@ -14,6 +15,7 @@ const BandsDetails = () => {
            <div className='max-w-6xl mx-auto'>
 
            <header>
+                <Header></Header>
                 <NavBar></NavBar>
             </header>
 
@@ -64,7 +66,7 @@ const BandsDetails = () => {
                             
                             
                             onClick={() => window.open(data["shop-Link"], "_blank")}
-                            className='btn btn-info text-white font-bold text-sm'>Shop Now</button>
+                            className='btn btn-info text-white font-bold text-sm mt-6'>Shop Now</button>
 
      
                         </div>

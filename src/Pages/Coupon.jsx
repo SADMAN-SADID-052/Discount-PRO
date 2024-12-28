@@ -5,6 +5,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import NavBar from '../Components/NavBar';
 import Footer from '../Components/Footer';
+import Header from '../Components/Header';
 
 const Coupon = () => {
     const cdata = useLoaderData(); // Assuming cdata is the brand data with coupons
@@ -20,6 +21,7 @@ const Coupon = () => {
          <div className="max-w-6xl mx-auto">
 
          <header className=''>
+            <Header></Header>
             <NavBar></NavBar>
             </header>
 

@@ -3,6 +3,7 @@ import { AuthContext } from '../Provider/AuthProvider';
 import NavBar from '../Components/NavBar';
 import Footer from '../Components/Footer';
 import { Link } from 'react-router-dom';
+import Header from '../Components/Header';
 
 const MyProfile = () => {
 
@@ -14,6 +15,7 @@ const MyProfile = () => {
 
   
 <header>
+  <Header></Header>
   <NavBar></NavBar>
 </header>
 
